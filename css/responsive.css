@@ -1,0 +1,364 @@
+@media all and (max-width: 800px) {
+  .h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    color: #fbc117;
+    padding-left: 6vw;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .menu {
+    position: absolute;
+    right: -40px;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(#35016f, #6E21E0);
+    transform: translateX(100%);
+    padding-top: 50px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .m-link {
+    display: inline-block;
+  }
+
+  .m-nav-toggle {
+    display: flex !important;
+  }
+
+  body > div > img.arriere_plan {
+    display: none;
+  }
+
+  .png {
+    background-image: url("img/arriereplan_mobile.svg");
+  }
+
+  .h1 {
+    z-index: -800;
+  }
+
+  .h2 {
+    font-family: "Poppins SemiBold", sans-serif;
+    color: #fbc117;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+
+  .h3 {
+    font-family: "Poppins Thin", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: #fbc117;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .arriere_plan2 {
+    position: absolute;
+    margin-top: 191px;
+    z-index: -5;
+  }
+
+  body > div > div.logo > img, img.logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .menu.is-open {
+    text-align: center;
+  }
+
+  .quadrillage1 {
+    position: absolute;
+    top: 105px;
+    left: -10px;
+    width: 18vw;
+    z-index: -100;
+    transform: rotate(-90deg) !important;
+  }
+
+  .croix1 {
+    position: absolute;
+    top: 99px;
+    right: 100px;
+    width: 5vw;
+    z-index: -100;
+  }
+
+  .triangle {
+    position: absolute;
+    top: 180px;
+    right: 30px;
+    width: 5vw;
+    z-index: -100;
+  }
+
+  .quadrillage2 {
+    position: absolute;
+    top: 500px;
+    right: -8px;
+    width: 18vw;
+    z-index: -100;
+    transform: rotate(-90deg) !important;
+  }
+
+  .vague {
+    position: absolute;
+    top: 475px;
+    left: 125px;
+    width: 20vw;
+  }
+
+  #projet1 {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 120px;
+  }
+
+  .h2 {
+    margin-top: 270px;
+  }
+}
+.menu.is-open {
+  transform: translateX(0);
+  padding-top: 50px;
+  position: fixed;
+  width: 100%;
+}
+
+.m-nav-toggle {
+  width: 40px;
+  height: 70px;
+  display: none;
+  align-items: center;
+  cursor: pointer !important;
+  margin-right: 5%;
+  margin-top: 5%;
+  position: fixed;
+  right: 0;
+  z-index: 99;
+}
+.m-nav-toggle.is-open span.m-toggle-icon {
+  background: transparent;
+}
+.m-nav-toggle.is-open span.m-toggle-icon:before {
+  transform-origin: center;
+  transform: rotate(45deg);
+  top: 0;
+}
+.m-nav-toggle.is-open span.m-toggle-icon:after {
+  transform-origin: center;
+  transform: rotate(45deg);
+  top: 0;
+  transform: rotate(-45deg);
+  top: -3px;
+}
+
+span.m-toggle-icon {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: white;
+  position: relative;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+}
+span.m-toggle-icon:before, span.m-toggle-icon:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: white;
+  position: relative;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+}
+span.m-toggle-icon:before {
+  top: 12px;
+}
+span.m-toggle-icon:after {
+  top: -14px;
+}
+
+@media only screen and (max-width: 880px) {
+  [class=premier], [class=deux] {
+    margin: 0 auto;
+    width: 100% !important;
+    position: static;
+    margin-left: 0 !important;
+  }
+
+  #projet1, #projet2, #projet3, #projet4, #projet5, #projet6 {
+    flex-direction: column;
+  }
+
+  .resize {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 10px 20px rgba(234, 200, 102, 0.5);
+  }
+
+  .description {
+    margin-top: 10vh;
+  }
+
+  #projet5, #projet3, #projet6 {
+    flex-direction: column-reverse;
+  }
+
+  #projet1, #projet2, #projet3, #projet4, #projet5 {
+    margin-top: 20vh;
+  }
+
+  #projet6 {
+    margin-top: 12vh;
+  }
+
+  #projet4 {
+    margin-bottom: 15vh;
+  }
+
+  p.quisuisje {
+    font-family: "Poppins Thin", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  img.parcours {
+    width: 110%;
+    display: block;
+    margin-left: -17px;
+  }
+
+  div.contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  body > div > div.scroll > a > svg {
+    width: 15%;
+    float: right;
+    margin-right: 0px;
+    transform: rotate(180deg) !important;
+  }
+
+  div.contact1, div.contact2 {
+    width: 100%;
+  }
+
+  img.resize2 {
+    width: 80vw;
+    display: block;
+    box-shadow: 20px 20px rgba(234, 200, 102, 0.5);
+    margin-left: auto;
+    margin-right: 10vw;
+    margin-top: 20px;
+  }
+
+  h5 {
+    text-align: center;
+  }
+
+  div.contenu {
+    color: white;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+  }
+
+  [src="img/mokup/LARD-3.png"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  body > div.contenu > div > div.mokuplard1 > img {
+    width: 100%;
+    margin-left: 0;
+  }
+  body > div.contenu > div > div.mokuplard2 > img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .triangle2, .quadrillage22 {
+    display: none;
+  }
+
+  .vague11 {
+    position: absolute;
+    top: 2860px;
+    left: 200px;
+    z-index: -2;
+    width: 15vw;
+  }
+
+  .download > a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .lorem {
+    position: absolute;
+    top: 4530px;
+    right: -10px;
+    width: 12vw;
+    z-index: -100;
+  }
+
+  .next {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+  .next > a {
+    color: white;
+    font-family: "Poppins Light", sans-serif;
+  }
+
+  .precedent {
+    display: block;
+    position: absolute;
+    left: 20px;
+  }
+  .precedent > a {
+    color: white;
+    font-family: "Poppins Light", sans-serif;
+  }
+
+  div.mokuup {
+    width: 100%;
+    margin-top: 30px;
+    display: block;
+  }
+
+  .mokuplard1 {
+    width: 100%;
+  }
+
+  .mokuplard2, [src="img/mokup/Mockup-campuscar3.png"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .precedent > a, .next > a {
+    font-size: 14px;
+  }
+
+  body > div.contenu > div.mokuup > div > div {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

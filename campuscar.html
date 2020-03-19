@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Portefolio de Adrien KRALJIC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Taviraj&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/943320b9d5.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html" class="m-link">Projets et compétences</a></li>
+            <li><a href="index.html" class="m-link">Qui-suis je ?</a></li>
+            <li><a href="index.html" class="m-link">Parcours</a></li>
+            <li><a href="index.html" class="m-link">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="m-nav-toggle">
+        <span class="m-toggle-icon"></span>
+    </div>
+</header>
+
+<body>
+<div class="logo">
+    <a href="index.html">
+        <img class="logo" src="img/logo.png" alt="">
+    </a>
+</div>
+
+
+<div class="contenu">
+    <img class="resize2" src="img/mokup/Mockup-campuscar.png"/>
+    <h5>Création d'une maquette graphique d'une application de covoiturage Universitaire: CampusCar</h5>
+    <h6>Présentation :</h6>
+    <p>Campus Car est projet individuel réalisé dans ma spécialité Web design. L'objectif de ce projet était de réaliser
+        le prototype interactif d'une application de covoiturage universitaire réservé exclusivement aux personnels et
+        étudiants de l'université de Franche-Comté.</p>
+
+    <h6>Procédé de création :</h6>
+
+    <p>Nous avons dans un premier temps travaillé sur les concurrents qui proposent
+        les mêmes services que nous. Dans un deuxième temps nous avons travaillé sur la création
+        d'un WiresFrames afin d'étudier et améliorer l'ergonomie de l'application.
+        Puis dans un dernier temps adapté le WiresFrames au prototype graphique final</p>
+
+    <h6>Compétences mises en œuvre :</h6>
+
+    <p>Etude concurentiel <br>
+        Conception logotype <br>
+        Maquettage graphique de l'application
+    </p>
+
+
+    <div class="container container1">
+        <a href="https://xd.adobe.com/view/b7dc939b-ab95-42c9-72a6-645ff49ebf3e-c1ed/" class="btn btn-1">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+            </svg>
+            Tester l'app
+        </a>
+    </div>
+
+
+    <div class="mokuup">
+        <div class="mokuplard1">
+            <img src="img/mokup/Mockup-campuscar2.png"/>
+        </div>
+        <div class="mokuplard2">
+            <img src="img/mokup/Mockup-campuscar3.png"/>
+        </div>
+    </div>
+    <h6>Bilan</h6>
+    <p>J'ai énormément apprécié ce projet car j'ai pu faire preuve de toute ma créativité.
+        Et également renforcer mes acquis dans la vectorisation, le maquettage et la mise en page.</p>
+
+    <div class="next">
+
+        <a href="BOSS.html"><p><i class="fas fa-arrow-right"></i> Voir le Projet suivant</p></a>
+    </div>
+
+    <div class="precedent">
+        <a href="L.A.R.D.html"><p><i class="fas fa-arrow-left"></i> Voir le Projet suivant</p></a>
+
+    </div>
+</div>
+<footer class="footer-accueil">
+
+    <div class="rsfooter-accueil">
+
+        <a href="https://www.linkedin.com/in/adrien-kraljic-68b205194/"><i class="fab fa-linkedin"></i> </a>
+
+        <a href="https://www.instagram.com/adrien_krlc/?hl=fr"><i class="fab fa-instagram-square"></i></a>
+
+        <p id="mention">Adrien Kraljic</p>
+    </div>
+
+</footer>
+
+<script>
+    var rellax = new Rellax('.rellax');
+</script>
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+
+    $('.m-nav-toggle').click(function (e) {
+        e.preventDefault();
+        $('.menu').toggleClass('is-open');
+        $('.m-nav-toggle').toggleClass('is-open');
+
+    });
+</script>
+</body>
+</html>

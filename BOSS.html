@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Portefolio de Adrien KRALJIC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Taviraj&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/943320b9d5.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html" class="m-link">Projets et compétences</a></li>
+            <li><a href="index.html" class="m-link">Qui-suis je ?</a></li>
+            <li><a href="index.html" class="m-link">Parcours</a></li>
+            <li><a href="index.html" class="m-link">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="m-nav-toggle">
+        <span class="m-toggle-icon"></span>
+    </div>
+</header>
+
+<body>
+<div class="logo">
+    <a href="index.html">
+        <img class="logo" src="img/logo.png" alt="">
+    </a>
+</div>
+
+
+<div class="contenu">
+    <img class="resize2" src="img/mokup/Mockup_boss.png"/>
+    <h5>Épreuves de rapidité : LE BOSS</h5>
+    <h6>Présentation :</h6>
+    <p>L'épreuve universitaire appeler "Le boss" fait référence au boss final d'un jeu vidéo.
+        Cette épreuve est une épreuve de rapidité qui consiste à faire un site web d'A à Z avec plusieurs fonctionnalités.
+        Celui-ci a pour but de valider le passage au semestre suivant</p>
+
+    <h6>Procédé de création :</h6>
+
+    <p>Le sujet est donné tot le matin. Le but de cette épreuve est de remplir tous les objectifs de création
+        du site web en un temps impartit : un jour ou deux jours </p>
+
+    <h6>Compétences mises en œuvre :</h6>
+
+    <p>Rapidité de création <br>
+        Aller a l'essentiel<br>
+       Création d'un site web : HTML, CSS, JavaScript
+    </p>
+
+    <h6>Bilan</h6>
+    <p>Cette épreuve est compliqué de par sa rapidité. Elle est donc très andurante mais
+        c'est une très bonne expérience pour se rendre compte de nos capacités d'attention et de concentration </p>
+
+    <div class="next">
+        <a href="Numerica.html"><p><i class="fas fa-arrow-right"></i> Voir le Projet suivant</p></a>
+    </div>
+
+    <div class="precedent">
+        <a href="campuscar.html"><p><i class="fas fa-arrow-left"></i> Voir le Projet suivant</p></a>
+
+    </div>
+</div>
+<footer class="footer-accueil">
+
+    <div class="rsfooter-accueil">
+
+        <a href="https://www.linkedin.com/in/adrien-kraljic-68b205194/"><i class="fab fa-linkedin"></i> </a>
+
+        <a href="https://www.instagram.com/adrien_krlc/?hl=fr"><i class="fab fa-instagram-square"></i></a>
+
+        <p id="mention">Adrien Kraljic</p>
+    </div>
+
+</footer>
+
+<script>
+    var rellax = new Rellax('.rellax');
+</script>
+
+<script>
+    AOS.init();
+</script>
+
+<script>
+
+    $('.m-nav-toggle').click(function (e) {
+        e.preventDefault();
+        $('.menu').toggleClass('is-open');
+        $('.m-nav-toggle').toggleClass('is-open');
+
+    });
+</script>
+</body>
+</html>

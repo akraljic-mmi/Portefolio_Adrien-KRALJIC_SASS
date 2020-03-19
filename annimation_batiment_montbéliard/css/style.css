@@ -1,0 +1,89 @@
+object {
+    width: 1500px;
+    height: 700px;
+    position: center;
+}
+
+html {
+    background-color: #919191;
+}
+
+#Nuage{
+    animation: shake 6s cubic-bezier(.36, .17, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    animation-delay: 0.5s;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(20px, 0, 0);
+    }
+}
+
+#bus {
+    animation: bus1 6s;
+    transition: transform 5s ease-in-out;
+    animation-delay: 1.5s;
+    /*animation-iteration-count: 2;*/
+}
+
+@keyframes bus1 {
+    0% {
+        /*transform: translate(0px, 0px);*/
+    }
+    99% {
+        transform: translate(990px, 560px);
+        opacity: 0;
+    }
+
+}
+
+#voiture-jaune {
+    animation: vj 5s;
+    transition: transform 5s ease-in-out;
+    animation-delay: 4.5s;
+    /*animation-iteration-count: 2;*/
+}
+
+@keyframes vj {
+
+    99% {
+        transform: translate(-990px, -560px);
+        opacity: 0;
+
+    }
+}
+
+#voiture_rouge {
+    animation: vr 3s;
+    transition: transform 5s ease-in-out;
+    animation-delay: 5.5s;
+    /*animation-iteration-count: 2;*/
+}
+
+@keyframes vr {
+    99% {
+        transform: translate(-400px, 220px);
+        opacity: 0;
+
+    }
+}
+
+#voiture-grise_retourner:hover, #camionette:hover, #voiture-grise:hover, #voiture_rouge:hover, #bus:hover, #voiture-jaune:hover {
+    transition: 2s;
+    stroke: #ffbb00;
+    stroke-width: 0.5;
+}
+

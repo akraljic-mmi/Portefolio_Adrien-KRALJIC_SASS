@@ -1,0 +1,517 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+[alt="www.000webhost.com"] {
+  display: none;
+}
+
+.png {
+  width: 100vw;
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #35016f;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+
+.h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  color: #fbc117;
+  padding-top: 20vh;
+  padding-left: 6vw;
+  position: relative;
+  z-index: -50;
+}
+
+nav > ul {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+ul > li {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 70px;
+}
+
+nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+nav > ul > li > a:before {
+  content: "";
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  border-radius: 50px;
+}
+nav > ul > li > a:before:hover {
+  color: aquamarine;
+}
+
+.menu {
+  margin-right: 40px;
+  z-index: 10;
+}
+
+nav li :hover {
+  color: aquamarine;
+}
+
+.h2 {
+  margin-top: 90vh;
+}
+
+h2 {
+  font-family: "Poppins Medium", sans-serif;
+  color: #fbc117;
+  font-size: 30px;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Poppins Thin", sans-serif;
+  font-size: 17px;
+  margin-left: 130px;
+  color: #fbc117;
+}
+
+[src="img/arriereplan.svg"] {
+  z-index: -99;
+  position: absolute;
+}
+
+.quadrillage1 {
+  position: absolute;
+  top: 230px;
+  right: 250px;
+  width: 7vw;
+  z-index: -100;
+}
+
+.quadrillage11 {
+  position: absolute;
+  top: 2030px;
+  left: 4px;
+  width: 7vw;
+  z-index: -100;
+  transform: rotate(90deg) !important;
+}
+
+.quadrillage2 {
+  position: absolute;
+  top: 630px;
+  right: 650px;
+  width: 7vw;
+  z-index: -5;
+}
+
+.quadrillage22 {
+  position: absolute;
+  top: 1630px;
+  right: 350px;
+  width: 7vw;
+  z-index: -5;
+}
+
+.croix1 {
+  position: absolute;
+  top: 175px;
+  right: 530px;
+  z-index: -1;
+  width: 2vw;
+}
+
+.triangle {
+  position: absolute;
+  top: 530px;
+  right: 370px;
+  z-index: -99;
+}
+
+.triangle2 {
+  position: absolute;
+  top: 2000px;
+  left: 100px;
+  z-index: -99;
+}
+
+.triangle3 {
+  position: absolute;
+  top: 4500px;
+  left: 100px;
+  z-index: -99;
+  width: 3vw;
+}
+
+.rond {
+  position: absolute;
+  top: 630px;
+  left: 200px;
+  z-index: -2;
+}
+
+.rond2 {
+  position: absolute;
+  top: 2930px;
+  left: 700px;
+  z-index: -2;
+}
+
+.vague {
+  position: absolute;
+  top: 730px;
+  left: 400px;
+  z-index: -2;
+  width: 7vw;
+}
+
+.vague11 {
+  position: absolute;
+  top: 2930px;
+  left: 200px;
+  z-index: -2;
+  width: 5vw;
+}
+
+.quadrillage3 {
+  position: absolute;
+  top: 2030px;
+  right: 5px;
+  z-index: -2;
+  width: 10vw;
+}
+
+.arriere_plan2 {
+  position: absolute;
+  margin-top: 100px;
+  z-index: -5;
+}
+
+#projetetcompétence {
+  margin-top: 400px;
+  margin-left: 55px;
+  position: relative;
+}
+
+.resize {
+  width: 30vw;
+  display: block;
+  margin-right: 50px;
+  box-shadow: 60px 60px rgba(234, 200, 102, 0.5);
+}
+
+.resize2 {
+  width: 30vw;
+  display: block;
+  margin-right: 130px;
+  margin-top: 80px;
+  margin-left: 35px;
+  margin-bottom: 35px;
+  box-shadow: 20px 20px rgba(234, 200, 102, 0.5);
+  float: right;
+}
+
+#projet1, #projet2, #projet3, #projet4, #projet5 {
+  width: 100%;
+  margin-top: 25vh;
+  display: flex;
+}
+
+#projet6 {
+  width: 100%;
+  margin-top: 25vh;
+  display: flex;
+  margin-top: 15vh !important;
+}
+
+.description {
+  text-align: center;
+  color: white;
+  /*font-family: 'Poppins Medium', sans-serif;*/
+  font-family: "Taviraj", serif;
+  margin-top: 20vh;
+  font-size: 18px;
+}
+
+.boss {
+  width: 30vw;
+  display: block;
+  margin-right: 50px;
+}
+
+[class="1"] {
+  margin-left: 15vw;
+  width: 50%;
+}
+
+[class="2"] {
+  width: 50%;
+  margin-right: 15vw;
+}
+
+* {
+  transition-duration: 300ms;
+}
+
+#projet4 {
+  margin-bottom: 25vh;
+}
+
+p.quisuisje {
+  font-family: "Poppins Regular", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  margin-left: 130px;
+  margin-right: 300px;
+  margin-top: 70px;
+}
+
+img.parcours {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+}
+
+.contact1 {
+  margin-top: 36px;
+}
+
+div.contact1, div.contact2 {
+  width: 50%;
+  text-align: center;
+  font-family: "Poppins Thin", sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.contact1 a {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+div.contact1 > p, div.contact2 > p {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+i {
+  color: #FBC117;
+  font-size: 27px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+body > div > div.scroll > a > svg {
+  width: 6%;
+  float: right;
+  margin-right: 40px;
+  transform: rotate(180deg) !important;
+}
+
+.cercle1 {
+  position: absolute;
+  top: 6430px;
+  left: -130px;
+  width: 15vw;
+  z-index: -100;
+}
+
+.lorem {
+  position: absolute;
+  top: 4530px;
+  right: -15px;
+  width: 7vw;
+  z-index: -100;
+}
+
+.cercle2 {
+  position: absolute;
+  top: 400px;
+  right: -80px;
+  width: 10vw;
+  z-index: -100;
+  transform: rotate(90deg) !important;
+}
+
+h5 {
+  font-family: "Poppins", sans-serif;
+  color: #FBC117;
+  font-size: 25px;
+}
+
+h6 {
+  font-family: "Poppins Medium", sans-serif;
+  color: #FBC117;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+#mention {
+  color: white;
+  font-family: "Poppins Light", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  margin-top: -10px;
+}
+
+footer {
+  margin-bottom: 30px;
+}
+
+.rsfooter-accueil {
+  text-align: center;
+}
+
+div.rsfooter-accueil > a {
+  margin: 10px;
+}
+
+body > div > footer > div > i {
+  display: block;
+  text-align: center;
+}
+
+div.contenu {
+  color: white;
+  margin-left: 50px;
+  margin-top: 66px;
+  margin-bottom: 100px;
+}
+div.contenu > p {
+  color: white;
+  font-family: "Poppins Regular", sans-serif;
+}
+div.mokuup {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+}
+
+.mokuplard1, .mokuplard2 {
+  width: 50%;
+}
+
+[src="img/mokup/LARD-3.png"], body > div.contenu > div > div.mokuplard1 > img {
+  width: 50%;
+  margin-left: 10vw;
+}
+
+/*body > div.contenu > div > div.mokuplard2 > img {*/
+/*    width: 80%;*/
+/*    margin-top: 10px;*/
+/*}*/
+[src="img/mokup/logo_EM.png"] {
+  width: 80%;
+  margin-top: 10px;
+}
+
+[src="img/mokup/Mockup-campuscar3.png"] {
+  width: 50vh;
+  margin-left: 30vh;
+}
+
+[src="img/mokup/crm_mockup.png"] {
+  margin-left: 200px;
+  width: 90%;
+}
+
+.download {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.download > a {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  color: white;
+  font-family: "Poppins Light", sans-serif;
+}
+
+.next {
+  display: block;
+  position: absolute;
+  right: 20px;
+}
+.next > a {
+  color: white;
+  font-family: "Poppins Light", sans-serif;
+}
+
+.precedent {
+  display: block;
+  position: absolute;
+  left: 20px;
+}
+.precedent > a {
+  color: white;
+  font-family: "Poppins Light", sans-serif;
+}
+
+body > div.contenu > div.mokuup > div > div {
+  display: block;
+  margin-left: 30vw;
+}
+body > div.contenu > div.mokuup > div > div > p {
+  font-size: 13px;
+  font-family: "Poppins Light", sans-serif;
+  color: white;
+}
+
+.container1 {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#projet1 div.deux, #projet2 div.deux, #projet3 div.deux, #projet4 div.deux, #projet5 div.deux, #projet6 div.deux {
+  width: 50%;
+  margin-right: 15vw;
+}
+#projet1 div.premier, #projet2 div.premier, #projet3 div.premier, #projet4 div.premier, #projet5 div.premier, #projet6 div.premier {
+  width: 50%;
+  margin-left: 15vw;
+}
+
+/*# sourceMappingURL=styles.css.map */
