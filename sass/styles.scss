@@ -1,3 +1,19 @@
+
+$purple: #35016f;
+$yellow: #fbc117;
+
+$colorshadow: rgba(234, 200, 102, 0.5);
+
+/* @include box-shadow(60, 60, blur, $colorshadow);
+
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+     -moz-box-shadow: $params;
+          box-shadow: $params;
+} */
+
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -221,12 +237,13 @@ html {
     margin-left: 55px;
     position: relative;
   }
+
   
   .resize {
     width: 30vw;
     display: block;
     margin-right: 50px;
-    box-shadow: 60px 60px rgb(234, 200, 102, 0.5);
+    box-shadow: 60px 60px rgba(234, 200, 102, 0.5);
   }
   
   .resize2 {
@@ -236,7 +253,7 @@ html {
     margin-top: 80px;
     margin-left: 35px;
     margin-bottom: 35px;
-    box-shadow: 20px 20px rgb(234, 200, 102, 0.5);
+    box-shadow: 20px 20px rgba(234, 200, 102, 0.5);
     float: right;
   }
   
