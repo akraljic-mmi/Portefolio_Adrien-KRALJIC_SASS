@@ -1,3 +1,12 @@
+$purple: #35016f;
+$yellow: #fbc117;
+
+$font-sans-serif: 'Poppins', 'Helvetica Neue', sans-serif;
+$font-serif: 'Taviraj', 'Georgia', serif;
+
+
+
+
 a.btn {
     display: block;
     margin: auto;
@@ -104,7 +113,7 @@ a.btn {
   
     rect {
       fill: none;
-      stroke: #d6b144;
+      stroke: $yellow;
       stroke-width: 2;
       stroke-dasharray: 422, 0;
       transition: all 0.35s linear;

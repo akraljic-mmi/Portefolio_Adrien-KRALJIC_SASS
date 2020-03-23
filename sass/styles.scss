@@ -1,4 +1,3 @@
-
 $purple: #35016f;
 $yellow: #fbc117;
 
@@ -12,6 +11,8 @@ $colorshadow: rgba(234, 200, 102, 0.5);
           box-shadow: $params;
 } */
 
+$font-sans-serif: 'Poppins', 'Helvetica Neue', sans-serif;
+$font-serif: 'Taviraj', 'Georgia', serif;
 
 
 html {
@@ -32,7 +33,7 @@ html {
   body {
     overflow-x: hidden;
     margin: 0;
-    background-color: #35016f;
+    background-color: $purple;
   }
   
   .logo {
@@ -44,9 +45,9 @@ html {
   }
   
   .h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-sans-serif;
     font-size: 3em;
-    color: #fbc117;
+    color: $yellow;
     padding-top: 20vh;
     padding-left: 6vw;
     position: relative;
@@ -72,7 +73,7 @@ html {
   nav > ul > li > a {
     color: white;
     text-decoration: none;
-    font-family: 'Poppins Medium', sans-serif;
+    font-family: $font-sans-serif;
     font-size: 20px;
     position: relative;
   
@@ -106,18 +107,18 @@ html {
   }
   
   h2 {
-    font-family: 'Poppins Medium', sans-serif;
-    color: #fbc117;
+    font-family: $font-sans-serif;
+    color: $yellow;
     font-size: 30px;
     margin-top: 20vh;
     text-align: center;
   }
   
   h3 {
-    font-family: 'Poppins Thin', sans-serif;
+    font-family: $font-sans-serif;
     font-size: 17px;
     margin-left: 130px;
-    color: #fbc117;
+    color: $yellow;
   }
   
   [src="img\/arriereplan\.svg"] {
@@ -274,8 +275,8 @@ html {
     text-align: center;
     color: white;
   
-    /*font-family: 'Poppins Medium', sans-serif;*/
-    font-family: 'Taviraj', serif;
+    /*font-family: $font-sans-serif;*/
+    font-family: $font-serif;
     margin-top: 20vh;
     font-size: 18px;
   }
@@ -305,7 +306,7 @@ html {
   }
   
   p.quisuisje {
-    font-family: "Poppins Regular", sans-serif;
+    font-family: $font-sans-serif;
     font-size: 20px;
     text-align: left;
     color: white;
@@ -334,7 +335,7 @@ html {
     &.contact1, &.contact2 {
       width: 50%;
       text-align: center;
-      font-family: "Poppins Thin", sans-serif;
+      font-family: $font-sans-serif;
       color: white;
       font-size: 20px;
     }
@@ -355,7 +356,7 @@ html {
   }
   
   i {
-    color: #FBC117;
+    color: $yellow;
     font-size: 27px;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -394,21 +395,21 @@ html {
   }
   
   h5 {
-    font-family: 'Poppins', sans-serif;
-    color: #FBC117;
+    font-family: $font-sans-serif;
+    color: $yellow;
     font-size: 25px;
   }
   
   h6 {
-    font-family: 'Poppins Medium', sans-serif;
-    color: #FBC117;
+    font-family: $font-sans-serif;
+    color: $yellow;
     font-size: 20px;
     margin-bottom: 2px;
   }
   
   #mention {
     color: white;
-    font-family: 'Poppins Light', sans-serif;
+    font-family: $font-sans-serif;
     font-size: 16px;
     text-align: center;
     position: relative;
@@ -441,7 +442,7 @@ html {
   
       > p {
         color: white;
-        font-family: 'Poppins Regular', sans-serif;
+        font-family: $font-sans-serif;
       }
     }
   
@@ -491,7 +492,7 @@ html {
       margin-right: 30px;
       margin-top: 20px;
       color: white;
-      font-family: "Poppins Light", sans-serif;
+      font-family: $font-sans-serif;
     }
   }
   
@@ -502,7 +503,7 @@ html {
   
     > a {
       color: white;
-      font-family: "Poppins Light", sans-serif;
+      font-family: $font-sans-serif;
     }
   }
   
@@ -513,14 +514,14 @@ html {
   
     > a {
       color: white;
-      font-family: "Poppins Light", sans-serif;
+      font-family: $font-sans-serif;
     }
   }
   
   body > div.contenu > div.mokuup > div > div {
     > p {
       font-size: 13px;
-      font-family: "Poppins Light", sans-serif;
+      font-family: $font-sans-serif;
       color: white;
     }
   
