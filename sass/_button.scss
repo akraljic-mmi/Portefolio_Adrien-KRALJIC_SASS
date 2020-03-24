@@ -1,11 +1,8 @@
-$purple: #35016f;
-$yellow: #fbc117;
-
-$font-sans-serif: 'Poppins', 'Helvetica Neue', sans-serif;
-$font-serif: 'Taviraj', 'Georgia', serif;
-
-
-
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
 
 a.btn {
     display: block;
@@ -19,13 +16,10 @@ a.btn {
     transition-property: all;
     transition-duration: 0.4s;
     transition-timing-function: ease;
+    background: $otherpurple;
+    font-weight: 100;
   }
-  
-  html, body {
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-  }
+
   
   .buttons {
     display: flex;
@@ -42,14 +36,13 @@ a.btn {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-  }
-  
-  @media (min-width: 600px) {
-    .container {
-      flex-direction: row;
-      justify-content: space-between;
+    
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-between;
     }
   }
+
   
   @media (max-height: 500px) {
     p {
@@ -91,19 +84,13 @@ a.btn {
     &:hover {
       text-decoration: none;
     }
-  }
-  
-  @media (min-width: 600px) {
-    .btn {
+
+    @media (min-width: 600px) {
       margin: 0 1em 2em;
     }
   }
   
-  .btn-1 {
-    background: #8500a8;
-    font-weight: 100;
-  
-    svg {
+.btn-1 svg {
       height: 45px;
       left: 0;
       position: absolute;
@@ -116,10 +103,11 @@ a.btn {
       stroke: $yellow;
       stroke-width: 2;
       stroke-dasharray: 422, 0;
-      transition: all 0.35s linear;
+      transition: all 0.35s linear; 
     }
-  
-    &:hover {
+
+
+    .btn-1:hover {
       background: rgba(225, 51, 45, 0);
       font-weight: 900;
       letter-spacing: 1px;
@@ -131,5 +119,8 @@ a.btn {
         transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
         stroke: turquoise;
       }
-    }
+  
+
   }
+  
+  

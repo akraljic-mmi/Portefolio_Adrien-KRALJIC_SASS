@@ -1,17 +1,19 @@
-@charset "UTF-8";
-/* @include box-shadow(60, 60, blur, $colorshadow);
+/* Hide label from webhost */
+[alt="www\.000webhost\.com"] {
+  display: none;
+}
 
-@mixin box-shadow($params) {
-  -webkit-box-shadow: $params;
-     -moz-box-shadow: $params;
-          box-shadow: $params;
-} */
 html {
   scroll-behavior: smooth;
 }
 
-[alt="www.000webhost.com"] {
-  display: none;
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-color: $purple;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .png {
@@ -19,12 +21,6 @@ html {
   height: 120vh;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-body {
-  overflow-x: hidden;
-  margin: 0;
-  background-color: #35016f;
 }
 
 .logo {
@@ -36,9 +32,9 @@ body {
 }
 
 .h1 {
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
+  font-family: $font-sans-serif;
   font-size: 3em;
-  color: #fbc117;
+  color: $yellow;
   padding-top: 20vh;
   padding-left: 6vw;
   position: relative;
@@ -64,22 +60,24 @@ ul > li {
 nav > ul > li > a {
   color: white;
   text-decoration: none;
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
+  font-family: $font-sans-serif;
   font-size: 20px;
   position: relative;
-}
-nav > ul > li > a:before {
-  content: "";
-  width: 50%;
-  height: 2px;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  background-color: white;
-  border-radius: 50px;
-}
-nav > ul > li > a:before:hover {
-  color: aquamarine;
+
+  &:before {
+    content: "";
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    border-radius: 50px;
+
+    &:hover {
+      color: aquamarine;
+    }
+  }
 }
 
 .menu {
@@ -96,21 +94,21 @@ nav li :hover {
 }
 
 h2 {
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
-  color: #fbc117;
+  font-family: $font-sans-serif;
+  color: $yellow;
   font-size: 30px;
   margin-top: 20vh;
   text-align: center;
 }
 
 h3 {
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
+  font-family: $font-sans-serif;
   font-size: 17px;
   margin-left: 130px;
-  color: #fbc117;
+  color: $yellow;
 }
 
-[src="img/arriereplan.svg"] {
+[src="img\/arriereplan\.svg"] {
   z-index: -99;
   position: absolute;
 }
@@ -232,7 +230,7 @@ h3 {
   width: 30vw;
   display: block;
   margin-right: 50px;
-  box-shadow: 60px 60px rgba(234, 200, 102, 0.5);
+  @include box-shadow(45px, 45px, 0, $colorshadow);
 }
 
 .resize2 {
@@ -242,11 +240,15 @@ h3 {
   margin-top: 80px;
   margin-left: 35px;
   margin-bottom: 35px;
-  box-shadow: 20px 20px rgba(234, 200, 102, 0.5);
+  @include box-shadow(20px, 20px, 0, $colorshadow);
   float: right;
 }
 
-#projet1, #projet2, #projet3, #projet4, #projet5 {
+#projet1,
+#projet2,
+#projet3,
+#projet4,
+#projet5 {
   width: 100%;
   margin-top: 25vh;
   display: flex;
@@ -262,8 +264,7 @@ h3 {
 .description {
   text-align: center;
   color: white;
-  /*font-family: $font-sans-serif;*/
-  font-family: "Taviraj", "Georgia", serif;
+  font-family: $font-serif;
   margin-top: 20vh;
   font-size: 18px;
 }
@@ -293,7 +294,7 @@ h3 {
 }
 
 p.quisuisje {
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
+  font-family: $font-sans-serif;
   font-size: 20px;
   text-align: left;
   color: white;
@@ -318,12 +319,15 @@ img.parcours {
   margin-top: 36px;
 }
 
-div.contact1, div.contact2 {
-  width: 50%;
-  text-align: center;
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
-  color: white;
-  font-size: 20px;
+div {
+  &.contact1,
+  &.contact2 {
+    width: 50%;
+    text-align: center;
+    font-family: $font-sans-serif;
+    color: white;
+    font-size: 20px;
+  }
 }
 
 .contact1 a {
@@ -333,19 +337,22 @@ div.contact1, div.contact2 {
   margin-top: 40px;
 }
 
-div.contact1 > p, div.contact2 > p {
-  margin-bottom: 40px;
-  margin-top: 40px;
+div {
+  &.contact1 > p,
+  &.contact2 > p {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
 }
 
 i {
-  color: #FBC117;
+  color: $yellow;
   font-size: 27px;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
-body > div > div.scroll > a > svg {
+footer > div.scroll > a > svg {
   width: 6%;
   float: right;
   margin-right: 40px;
@@ -378,21 +385,21 @@ body > div > div.scroll > a > svg {
 }
 
 h5 {
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
-  color: #FBC117;
+  font-family: $font-sans-serif;
+  color: $yellow;
   font-size: 25px;
 }
 
 h6 {
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
-  color: #FBC117;
+  font-family: $font-sans-serif;
+  color: $yellow;
   font-size: 20px;
   margin-bottom: 2px;
 }
 
 #mention {
   color: white;
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
+  font-family: $font-sans-serif;
   font-size: 16px;
   text-align: center;
   position: relative;
@@ -416,27 +423,33 @@ body > div > footer > div > i {
   text-align: center;
 }
 
-div.contenu {
-  color: white;
-  margin-left: 50px;
-  margin-top: 66px;
-  margin-bottom: 100px;
-}
-div.contenu > p {
-  color: white;
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
-}
-div.mokuup {
-  width: 100%;
-  display: flex;
-  margin-top: 100px;
+div {
+  &.contenu {
+    color: white;
+    margin-left: 50px;
+    margin-top: 66px;
+    margin-bottom: 100px;
+
+    > p {
+      color: white;
+      font-family: $font-sans-serif;
+    }
+  }
+
+  &.mokuup {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+  }
 }
 
-.mokuplard1, .mokuplard2 {
+.mokuplard1,
+.mokuplard2 {
   width: 50%;
 }
 
-[src="img/mokup/LARD-3.png"], body > div.contenu > div > div.mokuplard1 > img {
+[src="img\/mokup\/LARD-3\.png"],
+body > div.contenu > div > div.mokuplard1 > img {
   width: 50%;
   margin-left: 10vw;
 }
@@ -445,17 +458,18 @@ div.mokuup {
 /*    width: 80%;*/
 /*    margin-top: 10px;*/
 /*}*/
-[src="img/mokup/logo_EM.png"] {
+
+[src="img\/mokup\/logo_EM\.png"] {
   width: 80%;
   margin-top: 10px;
 }
 
-[src="img/mokup/Mockup-campuscar3.png"] {
+[src="img\/mokup\/Mockup-campuscar3\.png"] {
   width: 50vh;
   margin-left: 30vh;
 }
 
-[src="img/mokup/crm_mockup.png"] {
+[src="img\/mokup\/crm_mockup\.png"] {
   margin-left: 200px;
   width: 90%;
 }
@@ -464,43 +478,47 @@ div.mokuup {
   margin: 0 auto;
   width: 100%;
   text-align: center;
-}
-.download > a {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 20px;
-  color: white;
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
+
+  > a {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    color: white;
+    font-family: $font-sans-serif;
+  }
 }
 
 .next {
   display: block;
   position: absolute;
   right: 20px;
-}
-.next > a {
-  color: white;
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
+
+  > a {
+    color: white;
+    font-family: $font-sans-serif;
+  }
 }
 
 .precedent {
   display: block;
   position: absolute;
   left: 20px;
-}
-.precedent > a {
-  color: white;
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
+
+  > a {
+    color: white;
+    font-family: $font-sans-serif;
+  }
 }
 
 body > div.contenu > div.mokuup > div > div {
+  > p {
+    font-size: 13px;
+    font-family: $font-sans-serif;
+    color: white;
+  }
+
   display: block;
   margin-left: 30vw;
-}
-body > div.contenu > div.mokuup > div > div > p {
-  font-size: 13px;
-  font-family: "Poppins", "Helvetica Neue", sans-serif;
-  color: white;
 }
 
 .container1 {
@@ -512,13 +530,19 @@ body > div.contenu > div.mokuup > div > div > p {
   margin-bottom: 20px;
 }
 
-#projet1 div.deux, #projet2 div.deux, #projet3 div.deux, #projet4 div.deux, #projet5 div.deux, #projet6 div.deux {
-  width: 50%;
-  margin-right: 15vw;
-}
-#projet1 div.premier, #projet2 div.premier, #projet3 div.premier, #projet4 div.premier, #projet5 div.premier, #projet6 div.premier {
-  width: 50%;
-  margin-left: 15vw;
-}
+#projet1,
+#projet2,
+#projet3,
+#projet4,
+#projet5,
+#projet6 {
+  div.deux {
+    width: 50%;
+    margin-right: 15vw;
+  }
 
-/*# sourceMappingURL=styles.css.map */
+  div.premier {
+    width: 50%;
+    margin-left: 15vw;
+  }
+}
